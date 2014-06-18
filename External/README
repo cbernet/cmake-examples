@@ -1,0 +1,10 @@
+Example showing how to link against a standard external module
+
+Find the list of cmake find modules:
+	
+	cmake --help-module-list | grep Find
+
+Get information on one of these modules, 
+e.g. the variables that are set by the module
+
+	cmake --help-module FindBZip2
