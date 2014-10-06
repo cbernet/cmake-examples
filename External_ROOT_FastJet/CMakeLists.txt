@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 2.8)
 
 project(external)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -DDROP_CGAL -std=c++11 -stdlib=libc++ -Wall -Wextra -Wpedantic -Wno-unused-variable -Wno-unused-parameter")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC")
+
 add_executable(test_external main.cc)
 
 set( CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
