@@ -2,6 +2,6 @@
 
 #include <iostream>
 
-void hello() {
+void Hello::Print() const {
   std::cout<<"hello world!"<<std::endl;
 }

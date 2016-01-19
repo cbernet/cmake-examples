@@ -1,3 +1,6 @@
 #include <iostream>
 
-void hello();
+class Hello {
+ public:
+  void Print() const;
+};
